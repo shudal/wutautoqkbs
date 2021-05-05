@@ -5,11 +5,8 @@
 ###### crontab配置示例
 
 ```
+# 每天早上6.30执行脚本
 30 6 * * * /usr/bin/sh /root/wut/qkbs.sh
-
-cat /root/wut/qkbs.sh
-logdir=/root/trash/qkbs.log && date >> $logdir && /usr/bin/python3 /root/wut/myqkbs.py >> $logdir
-
 ```
 
 ##### 原理分析
